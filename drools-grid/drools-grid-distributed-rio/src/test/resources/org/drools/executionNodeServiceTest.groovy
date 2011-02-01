@@ -19,11 +19,11 @@ deployment(name:'executionNodeService',  debug: 'true') {
 
     /* Declares the artifacts required for deployment. Note the 'dl'
      * classifier used for the 'download' jar */
-    artifact id:'api', 'org.drools:drools-grid-distributed-api:5.2.0.SNAPSHOT'
-    artifact id:'service-dir', 'org.drools:drools-grid-distributed-dir-rio:5.2.0.SNAPSHOT'
-    artifact id:'service-dir-dl', 'org.drools:drools-grid-distributed-dir-rio:dl:5.2.0.SNAPSHOT'
-    artifact id:'service', 'org.drools:drools-grid-distributed-rio:5.2.0.SNAPSHOT'
-    artifact id:'service-dl', 'org.drools:drools-grid-distributed-rio:dl:5.2.0.SNAPSHOT'
+    artifact id:'api', 'org.drools:drools-grid-distributed-api:5.2.0.M1'
+    artifact id:'service-dir', 'org.drools:drools-grid-distributed-dir-rio:5.2.0.M1'
+    artifact id:'service-dir-dl', 'org.drools:drools-grid-distributed-dir-rio:dl:5.2.0.M1'
+    artifact id:'service', 'org.drools:drools-grid-distributed-rio:5.2.0.M1'
+    artifact id:'service-dl', 'org.drools:drools-grid-distributed-rio:dl:5.2.0.M1'
 
     /*
      * Declare the service to be deployed. The number of instances deployed
@@ -57,7 +57,7 @@ deployment(name:'executionNodeService',  debug: 'true') {
     rules {
         rule{
             resource 'SLAKsessions'
-            ruleClassPath 'org.drools:drools-grid-distributed-rio:5.2.0.SNAPSHOT'
+            ruleClassPath 'org.drools:drools-grid-distributed-rio:5.2.0.M1'
             serviceFeed(name: "ExecutionNodeService") {
                 watches "ksessionCounter"
                 //, ${SystemWatchID.SYSTEM_CPU}, ${SystemWatchID.JVM_MEMORY}"
