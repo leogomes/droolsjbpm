@@ -24,6 +24,7 @@ import org.drools.RuleBase;
 import org.drools.core.util.DroolsStreamUtils;
 import org.drools.definition.KnowledgePackage;
 import org.drools.rule.Package;
+import org.drools.rule.Rule;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -168,15 +169,4 @@ public class DroolsAntTaskTest extends BuildFileTest {
             e.printStackTrace();
         }
     }
-
-    @Test
-    public void testManyPackageFiles() {
-        try {
-            executeTarget( "rulesmanypackagefile" );
-            fail( "Should throw an exception " );
-        } catch ( Exception e ) {
-            e.printStackTrace();
-        }
-    }
-
 }
