@@ -215,21 +215,21 @@
   <modules>
     <!-- These are just the soa modules -->
     <!--<module>drools-ant</module>--><!-- Already split-off to separate repo -->
-    <module>drools-api</module>
+    <!--<module>drools-api</module>--><!-- Already split-off to separate repo -->
     <!--<module>drools-camel</module>--><!-- Already split-off to separate repo -->
-    <module>drools-compiler</module>
-    <module>drools-core</module>
+    <!--<module>drools-compiler</module>--><!-- Already split-off to separate repo -->
+    <!--<module>drools-core</module>--><!-- Already split-off to separate repo -->
     <!--<module>drools-container</module>--><!-- Already split-off to separate repo -->
-    <module>drools-decisiontables</module>
-    <!--<module>drools-grid</module>--><!-- Already split-off to separate repo -->
+    <!--<module>drools-decisiontables</module>-->
+    <!--<module>drools-grid</module>--><!-- Already split-off to separate repo --><!-- Already split-off to separate repo -->
     <!--<module>drools-guvnor</module>--><!-- Already split-off to separate repo -->
     <!--<module>drools-ide-common</module>--><!-- Already split-off to separate repo -->
-    <module>drools-jsr94</module>
-    <module>drools-persistence-jpa</module>
+    <!--<module>drools-jsr94</module>--><!-- Already split-off to separate repo -->
+    <!--<module>drools-persistence-jpa</module>--><!-- Already split-off to separate repo -->
     <!--<module>drools-repository-parent</module>--><!-- Already split-off to separate repo -->
     <!--<module>drools-server</module>--><!-- Already split-off to separate repo -->
-    <module>drools-templates</module>
-    <module>drools-verifier</module>
+    <!--<module>drools-templates</module>--><!-- Already split-off to separate repo -->
+    <!--<module>drools-verifier</module>--><!-- Already split-off to separate repo -->
     <!-- Other modules are defined in the not-soa profile -->
   </modules>
 
@@ -242,7 +242,7 @@
         </property>
       </activation>
       <modules>
-        <module>drools-clips</module>
+        <!--<module>drools-clips</module>--><!-- Already split-off to separate repo -->
         <!--<module>drools-planner</module>--><!-- Already split-off to separate repo -->
         <!--<module>drools-pipeline</module>--><!-- Already split-off to separate repo -->
         <!--<module>drools-simulator</module>--><!-- Already split-off to separate repo -->
@@ -288,8 +288,8 @@
         </property>
       </activation>
       <modules>
-        <module>drools-docs</module>
-        <module>drools-examples</module>
+        <!--<module>drools-docs</module>--><!-- Already split-off to separate repo -->
+        <!--<module>drools-examples</module>--><!-- Already split-off to separate repo -->
         <!--<module>drools-eclipse</module>--><!-- Already split-off to separate repo -->
       </modules>
     </profile>
